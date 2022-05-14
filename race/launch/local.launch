@@ -1,0 +1,8 @@
+<launch>
+    <node       type    =   "rviz"
+                name    =   "rviz"
+                pkg     =   "race"
+                args    =   "-d ~/cs4501f110/race/rviz/config_file.rviz" />
+
+    <include    file    =   "$(find move_base)/launch/remote_teleop.launch"></include>
+</launch>
